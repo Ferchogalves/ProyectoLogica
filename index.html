@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Proyecto Logica Calculadora</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .calculadora{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+      }
+    </style>
+</head>
+
+<body>
+   <video src="Matrix Green.mp4" autoplay loop muted poster="The.Matrix.glmatrix.2.png"></video>
+    <!--A partit de aqui es la estructura de cjas de nuestro poryecto-->
+ <div class="calculadora">
+    <h1>Calculadora</h1><i class="fa-solid fa-calculator fa-2xl" style="color: #ff0000;"></i>
+<h2>Suma</h2>
+ <form action="#" id="form_sum">
+
+    <input type="number" placeholder="num1 aqui" id="form_sum_num1"/>
+    <i class="fa-sharp fa-solid fa-plus" style="color: #e8f901;"></i>    <input type="number" placeholder="num2 aqui" id="form_sum_num2"/>
+    <button type="submit">=</button>
+    <input type="number" disabled id="form_sum_result">
+    <button type="reset">Reset</button>
+
+ </form>
+
+ <h2>Resta</h2>
+ <form action="#" id="form_rest">
+    <input type="number" placeholder="num1 aqui" id="form_rest_num1"/>
+    <i class="fa-solid fa-minus" style="color: #e8f901;"></i>
+    <input type="number" placeholder="=num2 aqui" id="form_rest_num2"/>
+    <button type="submit">=</button>
+    <input type="number" disabled id="form_rest_result">
+    <button type="reset">Reset</button>
+
+ </form>
+
+ <h2>Multiplicación</h2>
+ <form action="#" id="form_mult">
+    <input type="number" placeholder="num1 aqui" id="form_mult_num1"/>
+    <i class="fa-solid fa-xmark" style="color: #e8f901;"></i>
+    <input type="number" placeholder="=num2 aqui" id="form_mult_num2"/>
+    <button type="submit">=</button>
+    <input type="number" disabled id="form_mult_result">
+    <button type="reset">Reset</button>
+
+ </form>
+
+ <h2>División</h2>
+ <form action="#" id="form_divi">
+    <input type="number" placeholder="num1 aqui" id="form_divi_num1"/>
+    <i class="fa-solid fa-divide" style="color: #e8f901;"></i>
+    <input type="number" placeholder="=num2 aqui" id="form_divi_num2"/>
+    <button type="submit">=</button>
+    <input type="number" disabled id="form_divi_result">
+    <button type="reset">Reset</button>
+
+ </form>
+
+ <h2>Raíz Cuadrada</h2>    
+ <form action="#" id="form_raiz">
+   <h3>√</h3>
+    <input type="number" placeholder="num aqui" id="form_raiz_num1"/>
+    <button type="submit">=</button>
+    <input type="number" disabled id="form_raiz_result">
+    <button type="reset">Reset</button>
+
+ </form>
+
+ <h2>Raíz Cubica</h2>
+ <form action="#" id="form_raizcu">
+   <h3>3√</h3> 
+    <input type="number" placeholder="num aqui" id="form_raizcu_num1"/>
+    <button type="submit">=</button>
+    <input type="number" disabled id="form_raizcu_result">
+    <button type="reset">Reset</button>
+
+ </form>
+
+ <h2>Elevado al Cuadrado</h2>
+ <form action="#" id="form_cuadra">
+   <h3>^2</h3>
+    <input type="number" placeholder="num aqui" id="form_cuadra_num1"/>
+    <button type="submit">=</button>
+    <input type="number" disabled id="form_cuadra_result">
+    <button type="reset">Reset</button>
+
+ </form>
+
+
+
+
+</div>
+
+<!--Hasta aqui puede escribir la estructura del modelo de caja -->
+<script src="app.js"></script>
+</body>
+</html>
